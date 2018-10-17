@@ -1,0 +1,29 @@
+{
+  "name": "webmodulejs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "npm run lint && npm test && npm run wp",
+    "lint": "eslint src/**/*.js src/*.js",
+    "wpd": "webpack --mode=development",
+    "test": "jest"
+  },
+  "author": "",
+  "sideEffects": false,
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-unicorn": "^6.0.1",
+    "html-loader": "^0.5.5",
+    "jest": "^23.6.0",
+    "webpack": "^4.19.0",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.0"
+  }
+}

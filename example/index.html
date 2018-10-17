@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="add">add module</button>
+<div class="js-module" data-module="module-example" data-module-module-example--foo="hello world">module-example <span>kill</span></div>
+<div class="js-module" data-module="module-example2" data-module-module-example2--foo="hello again, world">module-example2</div>
+<script>
+    document.querySelector('#add').addEventListener('click', function() {
+        document.body.insertAdjacentHTML('beforeend', '<div class="js-module" data-module="module-example" data-module-module-example--foo="hello world">module-example <span>kill</span></div>')
+    });
+</script>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
